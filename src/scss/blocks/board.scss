@@ -1,0 +1,35 @@
+.game {
+  display: flex;
+  flex-direction: column;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(5, 50px);
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  line-height: 50px;
+  text-align: center;
+
+  &--bingo {
+    grid-template-columns: repeat(9, 50px);
+    line-height: 30px;
+  }
+}
+
+.number {
+  border: 1px solid aliceblue;
+
+  &--check {
+    background-color: purple;
+  }
+
+  &--user-check {
+    background-color: orange;
+  }
+
+  &--pc-check {
+    background-color: crimson;
+  }
+}
